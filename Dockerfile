@@ -18,3 +18,4 @@ RUN tar --strip-components=1 -xvzf docker-18.06.1-ce.tgz -C /usr/local/bin
 RUN rm *
 
 ENTRYPOINT tail -f /dev/null
+
