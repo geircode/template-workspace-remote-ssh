@@ -1,1 +1,1 @@
-docker exec -it template-workspace-remote-ssh-1 /bin/bash
+docker exec -it template_workspace_remote_ssh-1 /bin/bash

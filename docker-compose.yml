@@ -1,17 +1,17 @@
 version: '3.5'
 
 services:
-  template-workspace-remote-ssh:
-    image: geircode/template-workspace-remote-ssh:latest
+  template_workspace_remote_ssh:
+    image: geircode/template_workspace_remote_ssh:latest
     build:
       context: .
       dockerfile: Dockerfile    
-    container_name: template-workspace-remote-ssh-1
+    container_name: template_workspace_remote_ssh-1
     volumes:
       - ".:/app"       
       - "/var/run/docker.sock:/var/run/docker.sock"
     networks:
-      - template-workspace-remote-ssh_network
+      - template_workspace_remote_ssh_network
 networks:
-  template-workspace-remote-ssh_network:
+  template_workspace_remote_ssh_network:
           
