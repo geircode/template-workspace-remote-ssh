@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  template-workspace-remote-ssh-filecontainer:
+    image: geircode/template-workspace-remote-ssh-filecontainer:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: template-workspace-remote-ssh-filecontainer-1
+    networks:
+      - template-workspace-remote-ssh-filecontainer-network      
+
+networks:
+  template-workspace-remote-ssh-filecontainer-network:
+    name: template-workspace-remote-ssh-filecontainer-network    
+    

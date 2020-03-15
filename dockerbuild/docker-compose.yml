@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  template-workspace-remote-ssh-builder:
+    image: geircode/template-workspace-remote-ssh-builder:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: template-workspace-remote-ssh-builder-1
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "../.:/app"
+      # - ".:/app-scripts"             
+    secrets:
+      - source: dockerloginpassword      
+    networks:
+      - template-workspace-remote-ssh-builder-network      
+secrets:
+  dockerloginpassword:
+    file: ../../DockerSecrets/template-workspace-remote-ssh_secrets/dockerloginpassword
+
+networks:
+  template-workspace-remote-ssh-builder-network:
+    name: template-workspace-remote-ssh-builder-network    
+    
