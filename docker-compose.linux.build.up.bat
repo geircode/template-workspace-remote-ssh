@@ -7,4 +7,4 @@ call docker_image_builder\docker-compose.linux.build.bat
 
 cd %~dp0
 docker-compose -f docker-compose.yml up -d
-docker exec -it template-workspace-remote-ssh-1 /bin/bash
+docker exec -it template_workspace_remote_ssh-1 /bin/bash

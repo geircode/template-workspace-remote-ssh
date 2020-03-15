@@ -5,7 +5,7 @@ REM Run to copy the secret files to folder outside this repository
 REM cd %~dp0
 REM cd ..\..\..
 REM cd DockerSecrets
-REM mkdir template-workspace-remote-ssh_secrets
+REM mkdir template_workspace_remote_ssh_secrets
 
 
 REM xcopy /s "." "..\..\."

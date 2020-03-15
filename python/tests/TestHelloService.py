@@ -1,6 +1,6 @@
 import unittest
 import datetime
-from template-workspace-remote-ssh.HelloService import HelloService
+from template_workspace_remote_ssh.HelloService import HelloService
 
 class TestHelloService(unittest.TestCase):
 

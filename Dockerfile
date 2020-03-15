@@ -1,4 +1,4 @@
-FROM geircode/template-workspace-remote-ssh-filecontainer:latest as filecontainer
+FROM geircode/template_workspace_remote_ssh-filecontainer:latest as filecontainer
 
 FROM python:3.6
 
