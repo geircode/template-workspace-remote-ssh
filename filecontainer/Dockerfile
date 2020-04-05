@@ -1,4 +1,4 @@
-FROM alpine as filecontainer
+FROM library/alpine as filecontainer
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl

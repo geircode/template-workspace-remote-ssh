@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   template_workspace_remote_ssh-filecontainer:
-    image: geircode/template_workspace_remote_ssh-filecontainer:latest
+    image: ${DOCKER_REGISTRY}/geircode/template_workspace_remote_ssh-filecontainer:latest
     build:
       context: .
       dockerfile: Dockerfile
