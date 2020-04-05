@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
   template_workspace_remote_ssh-builder:
