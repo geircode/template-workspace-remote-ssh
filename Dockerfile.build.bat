@@ -1,3 +1,3 @@
 cd %~dp0
-docker build -f Dockerfile -t geircode/template_workspace_remote_ssh .
+docker build --no-cache -f Dockerfile -t geircode/template_workspace_remote_ssh .
 pause
